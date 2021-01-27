@@ -10,7 +10,7 @@ token = os.environ['DISCORD_BOT_TOKEN']
 
 
 @bot.command()
-async def wk(ctx):
+async def w(ctx):
     JST = timezone(timedelta(hours=+9), 'JST') 
     now = datetime.now(JST).strftime('%H:%M')
     ms = ctx.author.name + "　[" + now + "]"    
